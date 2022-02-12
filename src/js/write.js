@@ -13,7 +13,6 @@ function onAddProduct(e) {
 
 function onImageSelected(e) {
     let file = e.target.files[0];
-    console.log(file)
     document.querySelector(".display img").src = URL.createObjectURL(file);
 }
 
@@ -28,16 +27,16 @@ async function uploadNewProduct() {
         typeString = null
     }
     if (typeNumber.value == 1) {
-        typeString == "Mini Tower"
+        typeString = "Mini Tower"
     }
     if (typeNumber.value == 2) {
-        typeString == "Mid Tower"
+        typeString = "Mid Tower"
     }
     if (typeNumber.value == 3) {
-        typeString == "Full Tower"
+        typeString = "Full Tower"
     }
     else {
-        typeString == "Custom"
+        typeString = "Custom"
     }
     const price = document.querySelector('#productPrice').value.trim();
     const desc = document.querySelector('#productDesc').value.trim();
