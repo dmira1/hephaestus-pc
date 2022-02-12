@@ -1,0 +1,70 @@
+@use './variants/colors' as *;
+.add {
+    text-align: center;
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+
+.form-control {
+    > label {
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 3px;
+        padding: 0.25rem 1rem;
+        box-shadow: 0 0 1px 1px $black;
+        margin-top: 1rem;
+    }
+
+    > label:hover {
+        cursor: pointer;
+        background-color: $sky-50;
+    }
+
+}
+
+.productDetails {
+    height: 100%;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 700;
+    > label {
+        width: 45%;
+        margin-bottom: 1rem;
+    }
+
+    > input {
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+    
+    #productType {
+        width: 50%;
+        height: 30px;
+    }
+
+    #productDesc {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+}
+
+.submitButton {
+    text-align: center;
+    #submit {
+        font-weight: 700;
+        width: 150px;
+        border-radius: 5px;
+    }
+    :hover {
+        cursor: pointer;
+    }
+}
+
+.display img {
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 3px;
+}

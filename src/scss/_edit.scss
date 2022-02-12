@@ -1,0 +1,7 @@
+@use './variants/colors' as *;
+.edit {
+    text-align: center;
+    h2 {
+        margin-bottom: 1rem;
+    }
+}

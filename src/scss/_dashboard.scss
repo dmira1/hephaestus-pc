@@ -1,0 +1,39 @@
+@use './variants/colors' as *;
+.dashboard {
+    width: 20vw;
+    height: 100vh;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.dashboard li:first-of-type {
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+.dashboard ul {
+    text-align: center;
+    padding: 1rem;
+}
+
+.dashboard li {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.dashboard li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+.dashboard li a:hover {
+    background-color: rgba(78, 78, 78, 0.05);
+    border-radius: 1rem;
+    border: 1px solid $sky-900;
+}
+
+.active {
+    border: 1px solid black;
+    border-radius: 1rem;
+}

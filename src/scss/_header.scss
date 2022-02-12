@@ -1,0 +1,31 @@
+header a img {
+    border: 1px solid white;
+    margin-right: 0.25rem;
+    border-radius: 1rem;
+}
+
+header a img:hover {
+    fill: black;
+    background-color: red;
+    border-color: white;
+}
+
+.header-bg {
+    box-shadow: 1px 2px 5px slategray;
+    background-color: black;
+}
+
+.user ul{
+    margin-right: 2rem;
+    gap: 10%
+}
+
+.user a{
+    text-decoration: none;
+    color: slategrey
+}
+
+.user a:hover {
+    color: red
+}
+

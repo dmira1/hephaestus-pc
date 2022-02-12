@@ -1,0 +1,30 @@
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-container {
+    justify-content: space-between;
+}
+
+.inner-container {
+    padding: 1rem;
+}
+
+li a{
+    list-style: none;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-weight: 600;
+}
