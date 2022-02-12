@@ -22,7 +22,22 @@ async function uploadNewProduct() {
     // Data
     const file = document.querySelector('#productImage').files[0]
     const name = document.querySelector('#productName').value.trim();
-    const type = document.querySelector('#productType').value;
+    const typeNumber = document.querySelector('#productType').value;
+    if (typeNumber.value == 0) {
+        typeString = null
+    }
+    if (typeNumber.value == 1) {
+        typeString == "Mini Tower"
+    }
+    if (typeNumber.value == 2) {
+        typeString == "Mid Tower"
+    }
+    if (typeNumber.value == 3) {
+        typeString == "Full Tower"
+    }
+    if (typeNumber.value == 4) {
+        typeString == "Custom"
+    }
     const price = document.querySelector('#productPrice').value.trim();
     const desc = document.querySelector('#productDesc').value.trim();
     // Paths
@@ -43,7 +58,7 @@ async function uploadNewProduct() {
     set(itemRef, {
         key:itemRef.key,
         name,
-        type,
+        typeString,
         price,
         urlPath,
         price,
