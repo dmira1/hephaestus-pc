@@ -1,3 +1,5 @@
+@use './variants/colors' as *;
+
 .flex {
     display: flex;
     align-items: center;
