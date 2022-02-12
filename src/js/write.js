@@ -23,6 +23,7 @@ async function uploadNewProduct() {
     const file = document.querySelector('#productImage').files[0]
     const name = document.querySelector('#productName').value.trim();
     const typeNumber = document.querySelector('#productType').value;
+    console.log(typeNumber)
     if (typeNumber.value == 0) {
         typeString = null
     }
@@ -35,7 +36,7 @@ async function uploadNewProduct() {
     if (typeNumber.value == 3) {
         typeString == "Full Tower"
     }
-    if (typeNumber.value == 4) {
+    else {
         typeString == "Custom"
     }
     const price = document.querySelector('#productPrice').value.trim();
