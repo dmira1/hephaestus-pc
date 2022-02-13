@@ -9,7 +9,7 @@
     <title>Hephaestus PC</title>
 
     <link rel="stylesheet" href="css/styles.css" />
-    <script type="module" src="js/read.js"></script>
+    <script type="module" src="js/delete.js"></script>
   </head>
 
   <body>
@@ -41,9 +41,35 @@
         </ul>
       </div>
       <div class="content">
-
+        <div class="edit inner-container">
+          <h2>Delete Product</h2>
+          <form id="product-form" class="addDetails">
+              <div class="form-control">
+                  <div id="uploadImage" class="display">
+                      <img src="static/images/upload.png" alt="upload photo placeholder">
+                  </div>
+                  <div class="productDetails">
+                      <label for="productName">Product Name</label>
+                      <input type="text" id="productName" name="productName" disabled>
+                      <label for="productType">Product Type</label>
+                      <select name="productType" id="productType" disabled>
+                          <option value="0">Select...</option>
+                          <option value="1">Mini Chassis</option>
+                          <option value="2">Mid Tower</option>
+                          <option value="3">Full Tower</option>
+                          <option value="4">Custom</option>
+                      </select>
+                      <label for="productPrice">Product Price</label>
+                      <input type="text" id="productPrice" name="productPrice" disabled>
+                      <label for="productDesc">Product Description</label>
+                      <textarea name="productDesc" id="productDesc" cols="30" rows="5" disabled></textarea>
+                      <div class="submitButton">
+                          <input type="submit" value="Delete" id="submit">
+                      </div>
+                  </div>
+              </div>
+          </form>
       </div>
-    </div>
     </main>
     <footer>
       <div class="flex-container inner-container">

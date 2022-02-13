@@ -5,11 +5,23 @@ import { db, storage } from "./libs/firebase/firebaseConfig";
 document.querySelector('#productImage').addEventListener("change", onImageSelected);
 document.forms["product-form"].addEventListener("submit", onAddProduct);
 
-
 function onAddProduct(e) {
     e.preventDefault();
     uploadNewProduct();
 }
+
+function getSelectedName() {
+    const select = document.getElementById('productType')
+    selectedName = select.options[select.selectedIndex].text
+    return selectedName
+}
+
+function getSelectedNumber() {
+    const select = document.getElementById('productType')
+    selectedNumber = select.options[select.selectedIndex].value
+    return selectedNumber
+}
+
 
 function onImageSelected(e) {
     let file = e.target.files[0];
@@ -21,8 +33,8 @@ async function uploadNewProduct() {
     // Data
     const file = document.querySelector('#productImage').files[0]
     const name = document.querySelector('#productName').value.trim();
-    const number = document.getElementById('productType');
-    const type = number.options[number.selectedIndex].text;
+    const typeName = getSelectedName();
+    const typeNumber = getSelectedNumber();
     const price = document.querySelector('#productPrice').value.trim();
     const desc = document.querySelector('#productDesc').value.trim();
     // Paths
@@ -43,14 +55,13 @@ async function uploadNewProduct() {
     set(itemRef, {
         key:itemRef.key,
         name,
-        type,
+        typeNumber,
+        typeName,
         price,
         urlPath,
         price,
         desc,
         storagePath
     })
-
-    console.log("Item Added")
-
+    window.alert("Successfully added product.")
 }

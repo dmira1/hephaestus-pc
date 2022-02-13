@@ -8,7 +8,6 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -37,7 +36,6 @@ section {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
   overflow: visible;
@@ -65,7 +63,8 @@ abbr[data-original-title] {
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
-  text-decoration-skip-ink: none;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
 }
 
 address {
@@ -251,7 +250,6 @@ button::-moz-focus-inner,
 
 input[type=radio],
 input[type=checkbox] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -444,6 +442,17 @@ h3 {
   font-weight: 600;
 }
 
+main {
+  border-left: 1px solid black;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
 header a img {
   border: 1px solid white;
   margin-right: 0.25rem;
@@ -473,10 +482,6 @@ header a img:hover {
 
 .user a:hover {
   color: red;
-}
-
-main {
-  height: 100vh;
 }
 
 .add {
@@ -550,8 +555,6 @@ main {
 .dashboard {
   width: 20vw;
   height: 100vh;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
 }
 
 .dashboard li:first-of-type {
@@ -620,13 +623,13 @@ main {
 .product-top img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .product-details {
   height: 100%;
   padding: 1rem;
-  overflow: hidden;
 }
 .product-details p {
   font-size: 1rem;
@@ -634,20 +637,25 @@ main {
 }
 .product-details p:first-of-type {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .buttons {
   display: flex;
-  position: absolute;
+  position: relative;
 }
 
 .buttons svg {
-  color: #f0f9ff;
+  position: absolute;
+  color: #e0f2fe;
 }
 
 .buttons svg:hover {
-  color: #ffe4e6;
+  color: #fecdd3;
+}
+
+.buttons > a:last-of-type {
+  margin-left: 2rem;
 }
 
 .pages {
@@ -661,6 +669,10 @@ main {
 
 .pages a {
   font-size: 1rem;
+}
+
+.delete {
+  text-align: center;
 }
 
 footer {
