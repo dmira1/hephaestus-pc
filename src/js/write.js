@@ -26,13 +26,13 @@ async function uploadNewProduct() {
     if (typeNumber.value == 0) {
         typeString = null
     }
-    if (typeNumber.value == 1) {
+    else if (typeNumber.value == 1) {
         typeString = "Mini Tower"
     }
-    if (typeNumber.value == 2) {
+    else if (typeNumber.value == 2) {
         typeString = "Mid Tower"
     }
-    if (typeNumber.value == 3) {
+    else if (typeNumber.value == 3) {
         typeString = "Full Tower"
     }
     else {
