@@ -66,7 +66,7 @@ async function uploadNewProduct() {
         desc,
         storagePath
     })
-
+    window.alert("Product was successfully added.")
 }
 
 pageInit();
