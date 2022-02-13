@@ -80,7 +80,7 @@ async function editProductData(){
     desc,
     storagePath
   })
-window.alert("Successfully updated product.") 
+
 } 
   
 pageInit();
