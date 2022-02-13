@@ -1,0 +1,54 @@
+{
+  "products" : {
+    "-MvpBpp3zt-DE9jP7MWF" : {
+      "desc" : "Racer PC. Looks good and runs well. Runs cool and quiet too.",
+      "key" : "-MvpBpp3zt-DE9jP7MWF",
+      "name" : "Racer Full Tower PC",
+      "price" : "299999",
+      "storagePath" : "images/racer-full-tower.webp",
+      "typeName" : "Full Tower",
+      "typeNumber" : "3",
+      "urlPath" : "https://firebasestorage.googleapis.com/v0/b/hephaestus-pc.appspot.com/o/images%2Fracer-full-tower.webp?alt=media&token=6030e3c5-7b2c-4ca8-9048-d62ac99361a2"
+    },
+    "-MvpBudmGp06WyuuZ0Eu" : {
+      "desc" : "Simple, yet elegant.",
+      "key" : "-MvpBudmGp06WyuuZ0Eu",
+      "name" : "Blossom Mid Tower PC",
+      "price" : "199999",
+      "storagePath" : "images/blossom-mid-tower.webp",
+      "typeName" : "Mid Tower",
+      "typeNumber" : "2",
+      "urlPath" : "https://firebasestorage.googleapis.com/v0/b/hephaestus-pc.appspot.com/o/images%2Fblossom-mid-tower.webp?alt=media&token=29787883-bef9-44e3-b4fb-58ea01f6ca59"
+    },
+    "-MvpC2EMIS57CD6oMxmj" : {
+      "desc" : "Entry-level PC for the newbie gamers out there.",
+      "key" : "-MvpC2EMIS57CD6oMxmj",
+      "name" : "Cuboid Mini Tower",
+      "price" : "124767",
+      "storagePath" : "images/cuboid.webp",
+      "typeName" : "Mini Chassis",
+      "typeNumber" : "1",
+      "urlPath" : "https://firebasestorage.googleapis.com/v0/b/hephaestus-pc.appspot.com/o/images%2Fcuboid.webp?alt=media&token=0aeabc65-d57a-4002-a70e-615a6af5b30b"
+    },
+    "-MvpCvqkERY0DtwHRsex" : {
+      "desc" : "Mean and green. This beast can take any games thrown at it and still be quiet.",
+      "key" : "-MvpCvqkERY0DtwHRsex",
+      "name" : "Toxic Full Tower PC",
+      "price" : "259999",
+      "storagePath" : "images/toxic-full-tower.webp",
+      "typeName" : "Full Tower",
+      "typeNumber" : "3",
+      "urlPath" : "https://firebasestorage.googleapis.com/v0/b/hephaestus-pc.appspot.com/o/images%2Ftoxic-full-tower.webp?alt=media&token=b8597ca7-895f-44d5-afd4-02383ed3df6e"
+    },
+    "-MvpEr13A-W59iazzMKi" : {
+      "desc" : "Stylish PC for an office look.",
+      "key" : "-MvpEr13A-W59iazzMKi",
+      "name" : "Radiator Mini PC",
+      "price" : "159999",
+      "storagePath" : "images/radiator.webp",
+      "typeName" : "Mini Chassis",
+      "typeNumber" : "1",
+      "urlPath" : "https://firebasestorage.googleapis.com/v0/b/hephaestus-pc.appspot.com/o/images%2Fradiator.webp?alt=media&token=e4db6d57-737a-49d8-a71a-732f5a9093f6"
+    }
+  }
+}
