@@ -1,7 +1,54 @@
-KNOWN ISSUES 
+========================== ABOUT ==================================
 
-1. Update/Edit only works when a new image is selected. After this, you can update the data of any field.
-2. Pages do not work (only for styling) 
-3. Searchbar does not work (only for styling)
-4. Login & Settings offer no functionality.
-5. Index HTML has no content.
+Hephaestus PC is a Custom PC building site that delivers straight to the user's door.
+It uses a simple layout for simplicity and ease of use.
+
+========================== PAGES ==================================
+
+@index.html
+Home Page
+
+@read.html
+// Products Page
+Reads database/storage data from a firebase project and loads the products in the page in a card complete with basic information.
+The product card has buttons on the top-left that leads to the delete and edit page for the product.
+
+@write.html
+// Add Product Page
+Very simple form structure that takes the input and sends it to the database using references to the item and database.
+
+@update.html
+// Edit Page
+Similar to write with the form but populates the data using the keys stored in the session storage. Combines write and read to update data stored in the database.
+
+@delete.html
+// Delete Page
+Deletes the reference of the product to the database. Removing it from being read by read.js.
+
+========================= FOLDERS =================================
+
+scss/
+Contains all the scss styles to be compiled into styles.css
+
+data/
+Contains sample data for the project for use.
+
+js/
+Contains all the javascript to read, write, update, and delete products from the linked database.
+
+static/
+Contains image and svg folders for use in the project
+
+========================== ISSUES =================================
+
+Known Issues:
+
+1. Login, Settings, Search, Pages are purely style choices. No functionality offered. 
+2. There is no content for index.html thus far.
+3. The edit functionality is limited in that it only works when the image is replaced to begin with the edit function. 
+    After this, the product can be updated like normal.
+
+=========================== NOTES =================================
+
+Author Comments:
+Thank you for using Hephaestus PC. Email me for any inquiries @ author123@gmail.com
