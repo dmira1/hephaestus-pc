@@ -15,14 +15,14 @@ function onAddProduct(e) {
 }
 
 function getSelectedName() {
-    const select = document.getElementById('productType')
-    selectedName = select.options[select.selectedIndex].text
+    var select = document.getElementById('productType')
+    const selectedName = select.options[select.selectedIndex].text
     return selectedName
 }
 
 function getSelectedNumber() {
-    const select = document.getElementById('productType')
-    selectedNumber = select.options[select.selectedIndex].value
+    var select = document.getElementById('productType')
+    const selectedNumber = select.options[select.selectedIndex].value
     return selectedNumber
 }
 
