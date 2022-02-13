@@ -1,10 +1,9 @@
 function pageInit(){
     const key = sessionStorage.getItem('key')
-    console.log("Delete Page")
-    console.log(key)
+    const path = `rentals/${key}`
+    
     // key
     // button  remove()
-   
   }
   
   
