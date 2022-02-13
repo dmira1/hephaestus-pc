@@ -21,8 +21,8 @@ async function uploadNewProduct() {
     // Data
     const file = document.querySelector('#productImage').files[0]
     const name = document.querySelector('#productName').value.trim();
-    const number = document.getElementById('#productType');
-    const type = number.option[number.selectedIndex].text;
+    const number = document.getElementById('productType');
+    const type = number.options[number.selectedIndex].text;
     const price = document.querySelector('#productPrice').value.trim();
     const desc = document.querySelector('#productDesc').value.trim();
     // Paths
