@@ -23,16 +23,16 @@ async function uploadNewProduct() {
     const name = document.querySelector('#productName').value.trim();
     const typeNumber = document.querySelector('#productType').value;
     console.log(typeNumber)
-    if (typeNumber.value == 0) {
+    if (typeNumber.value == "0") {
         typeString = null
     }
-    else if (typeNumber.value == 1) {
+    else if (typeNumber.value == "1") {
         typeString = "Mini Tower"
     }
-    else if (typeNumber.value == 2) {
+    else if (typeNumber.value == "2") {
         typeString = "Mid Tower"
     }
-    else if (typeNumber.value == 3) {
+    else if (typeNumber.value == "3") {
         typeString = "Full Tower"
     }
     else {
