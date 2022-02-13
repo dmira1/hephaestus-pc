@@ -32,13 +32,13 @@ function setFieldValues({name, typeNumber, price, desc, urlPath}){
 
 function getSelectedName() {
   var select = document.getElementById('productType')
-  selectedName = select.options[select.selectedIndex].text
+  const selectedName = select.options[select.selectedIndex].text
   return selectedName
 }
 
 function getSelectedNumber() {
   var select = document.getElementById('productType')
-  selectedNumber = select.options[select.selectedIndex].value
+  const selectedNumber = select.options[select.selectedIndex].value
   return selectedNumber
 }
 
