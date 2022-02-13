@@ -3,7 +3,11 @@ import {ref as databaseRef, push, set} from 'firebase/database'
 import { db, storage } from "./libs/firebase/firebaseConfig";
 
 document.querySelector('#productImage').addEventListener("change", onImageSelected);
-document.forms["product-form"].addEventListener("submit", onAddProduct);
+const productForm = document.forms['product-form']
+
+async function pageInit() {
+    productForm.addEventListener('submit', onAddProduct)
+}
 
 function onAddProduct(e) {
     e.preventDefault();
@@ -62,5 +66,7 @@ async function uploadNewProduct() {
         desc,
         storagePath
     })
-    window.alert("Successfully added product.")
+window.alert("Successfully added product.")
 }
+
+pageInit();
