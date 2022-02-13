@@ -3,7 +3,7 @@ import {ref as databaseRef, set, get} from 'firebase/database';
 import {db, storage} from "./libs/firebase/firebaseConfig";
 
 document.querySelector('#productImage').addEventListener("change", onImageSelected);
-const productForm = document.forms['#product-form']
+const productForm = document.forms['product-form']
 
 async function pageInit(){
   const key = sessionStorage.getItem('key')
