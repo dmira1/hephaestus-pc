@@ -59,7 +59,6 @@ async function uploadNewProduct() {
         typeName,
         price,
         urlPath,
-        price,
         desc,
         storagePath
     })

@@ -1,0 +1,7 @@
+KNOWN ISSUES 
+
+1. Update/Edit only works when a new image is selected. After this, you can update the data of any field.
+2. Pages do not work (only for styling) 
+3. Searchbar does not work (only for styling)
+4. Login & Settings offer no functionality.
+5. Index HTML has no content.

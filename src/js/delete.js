@@ -21,6 +21,7 @@ async function pageInit(){
         })
         window.alert("Delete successful.")
         resetForm()
+        window.location.assign("read.html")
       }else{
         e.preventDefault()
         window.alert("Delete cancelled.")

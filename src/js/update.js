@@ -50,46 +50,37 @@ function onImageSelected(e) {
 async function editProductData(){
   const key = sessionStorage.getItem('key')
   const dataRef = databaseRef(db, `products/${key}`)
-  const productSnapShot = await get(dataRef)
 
-  console.log(productSnapShot.val().storagePath)
   var file = document.querySelector('#productImage').files
   const name = document.querySelector('#productName').value.trim();
   var typeName = getSelectedName();
   var typeNumber = getSelectedNumber();
   const price = document.querySelector('#productPrice').value.trim();
   const desc = document.querySelector('#productDesc').value.trim();
+
+  file = document.querySelector('#productImage').files[0]
+  const imageRef = storageRef(storage, `images/${file.name}`);
+
+  // Upload
+  const uploadResult = await uploadBytes(imageRef, file);
   
-  if (file.length !== 0) {
-    const imageRef = storageRef(storage, `images/${file.name}`);
-    const uploadResult = await uploadBytes(imageRef, file);
-    const urlPath = await getDownloadURL(imageRef)
-    const storagePath = productSnapShot.val().storagePath
-    set(dataRef, {
-      key: key,
-      name,
-      typeNumber,
-      typeName,
-      urlPath,
-      price,
-      desc,
-      storagePath
-    })}else{
-    const imageRef = storageRef(storage, `images/${file.name}`);
-    const uploadResult = await uploadBytes(imageRef, file);
-    const urlPath = await getDownloadURL(imageRef)
-    const storagePath = uploadResult.metadata.fullPath 
-    set(dataRef, {
-      key: key,
-      name,
-      typeNumber,
-      typeName,
-      urlPath,
-      price,
-      desc,
-      storagePath
-    })
-  } 
-  window.alert("Successfully updated product.")
-}
+  // URL of Image
+  const urlPath = await getDownloadURL(imageRef)
+
+  // Storage Path
+  const storagePath = uploadResult.metadata.fullPath;
+
+  set(dataRef, {
+    key,
+    name,
+    typeNumber,
+    typeName,
+    price,
+    urlPath,
+    desc,
+    storagePath
+  })
+window.alert("Successfully updated product.") 
+} 
+  
 pageInit();
