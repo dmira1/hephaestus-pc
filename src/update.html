@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="msapplication-TileColor" content="#c8112e" />
-    <meta name="theme-color" content="#c8112e" />
-    <title>Hephaestus PC</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="msapplication-TileColor" content="#c8112e" />
+        <meta name="theme-color" content="#c8112e" />
+        <title>Hephaestus PC</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
-    <script type="module" src="js/update.js"></script>
-  </head>
+        <link rel="stylesheet" href="css/styles.css" />
+        <script type="module" src="js/update.js"></script>
+    </head>
 
-  <body>
-    <header>
-      <div class="header-bg flex-container flex">
-          <div class="inner-container flex">
-              <a href="index.html">
-                <img src="static/svg/hammer.svg" alt="hammer icon">
-              </a>
-              <h1>Hephaestus PC</h1>
-          </div>
-          <nav class="user">
-              <ul class="flex">
-                  <li><a href="#">Login</a></li>
-                  <li><a href="#">Settings</a></li>
-              </ul>
-          </nav>
-      </div>
-    </header>
-    <main>
-      <div class="flex">
-        <div class="dashboard"> 
-            <ul>
-                <li>Dashboard</li>
-                <li><a href="read.html">Products</a></li>
-                <li><a href="write.html">Add</a></li>
-                <li><a href="update.html"  class="active">Edit</a></li>
-                <li><a href="delete.html">Delete</a></li>
-            </ul>
-        </div>
-        <div class="content">
-            <div class="edit inner-container">
-                <h2>Edit Product</h2>
-                <form id="product-form" class="addDetails">
-                    <div class="form-control">
-                        <div id="uploadImage" class="display">
-                            <img src="static/images/upload.png" alt="upload photo placeholder">
-                        </div>
-                        <label for="productImage">Upload Image</label>
-                        <input type="file" id="productImage" style="display:none"  class="select-file" accept=".jpg, .png, .jpeg, .webp">
-                        
-                        <div class="productDetails">
-                            <label for="productName">Product Name</label>
-                            <input type="text" id="productName" name="productName">
-                            <label for="productType">Product Type</label>
-                            <select name="productType" id="productType">
-                                <option value="0">Select...</option>
-                                <option value="1">Mini Chassis</option>
-                                <option value="2">Mid Tower</option>
-                                <option value="3">Full Tower</option>
-                                <option value="4">Custom</option>
-                            </select>
-                            <label for="productPrice">Product Price</label>
-                            <input type="text" id="productPrice" name="productPrice">
-                            <label for="productDesc">Product Description</label>
-                            <textarea name="productDesc" id="productDesc" cols="30" rows="5"></textarea>
-                            <div class="submitButton">
-                                <input type="submit" value="Update" id="submit">
-                            </div>
-                        </div>
-                    </div>
-                </form>
+    <body>
+        <header>
+            <div class="header-bg flex-container flex">
+                <div class="inner-container flex">
+                    <a href="index.html">
+                        <img src="static/svg/hammer.svg" alt="hammer icon">
+                    </a>
+                    <h1>Hephaestus PC</h1>
+                </div>
+                <nav class="user">
+                    <ul class="flex">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </div>
-    </main>
-    <footer>
-      <div class="flex-container inner-container">
-          <ul class="flex footer">
-              <li>Copyright &copy; 2021</li>
-              <li><a href="#">Contact Us</a></li>
-          </ul>
-      </div>
-    </footer>
-  </body>
+        </header>
+        <main>
+            <div class="flex">
+                <div class="dashboard"> 
+                    <ul>
+                        <li>Dashboard</li>
+                        <li><a href="read.html">Products</a></li>
+                        <li><a href="write.html">Add</a></li>
+                        <li><a href="update.html"  class="active">Edit</a></li>
+                        <li><a href="delete.html">Delete</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="edit inner-container">
+                        <h2>Edit Product</h2>
+                        <form id="product-form" class="addDetails">
+                            <div class="form-control">
+                                <div id="uploadImage" class="display">
+                                    <img src="static/images/upload.png" alt="upload photo placeholder">
+                                </div>
+                                <label for="productImage">Upload Image</label>
+                                <input type="file" id="productImage" style="display:none"  class="select-file" accept=".jpg, .png, .jpeg, .webp">
+                                
+                                <div class="productDetails">
+                                    <label for="productName">Product Name</label>
+                                    <input type="text" id="productName" name="productName">
+                                    <label for="productType">Product Type</label>
+                                    <select name="productType" id="productType">
+                                        <option value="0">Select...</option>
+                                        <option value="1">Mini Chassis</option>
+                                        <option value="2">Mid Tower</option>
+                                        <option value="3">Full Tower</option>
+                                        <option value="4">Custom</option>
+                                    </select>
+                                    <label for="productPrice">Product Price</label>
+                                    <input type="text" id="productPrice" name="productPrice">
+                                    <label for="productDesc">Product Description</label>
+                                    <textarea name="productDesc" id="productDesc" cols="30" rows="5"></textarea>
+                                    <div class="submitButton">
+                                        <input type="submit" value="Update" id="submit">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="flex-container inner-container">
+                <ul class="flex footer">
+                    <li>Copyright &copy; 2021</li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
 </html>
